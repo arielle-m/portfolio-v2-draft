@@ -41,10 +41,10 @@ class Footer extends HTMLElement {
     connectedCallback() {
         console.log("Footer custom element added to page.");
         this.innerHTML = `
-            <footer>
-                <a href="#top">Back to top</a>
+            <footer class="mb-14 p-4">
+                <a href="#top" class="fixed bottom-28 right-0 p-4 bg-neutral-200">^</a>
                 <nav>
-                    <ul class="flex">
+                    <ul class="flex justify-evenly w-full py-4">
                         <li><a href="#home">Email</a></li>
                         <li><a href="#projects">Linkedin</a></li>
                         <li><a href="#about">GitHub</a></li>

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio v.2.0</title>
+    <title>Arielle Marin &bull; Developer &amp; Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
@@ -57,6 +57,10 @@
             color: var(--dark1);
         }
 
+        .placeholder {
+            background-color: gray;
+        }
+
         #root {
             width: 100%;
         }
@@ -64,7 +68,8 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: Fredoka, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
             font-weight: 500;
-            color: var(--dark2);
+            /* color: var(--dark2); */
+            color: theme('colors.stone.950');
         }
 
         h1 {
@@ -92,21 +97,41 @@
 </head>
 <body id="top" class="bg-neutral-50">
     <a href="#main" class="screen-reader-text">Skip to content</a>
-    <div id="root" class="p-4">
+    <div id="root">
         <am-navbar></am-navbar>
-        <main id="main">
-            <header id="home">
-                <h1>hi im arielle marin</h1>
-                <p>lorem ipsum dolor sit amet</p>
+        <main id="main" class="p-4">
+            <header id="home" class="mb-28">
+                <h1 class="text-2xl my-4 lowercase">Hi there, I'm <strong class="text-6xl">Arielle Marin</strong></h1>
+                <h2 class="mb-2 lowercase">Developer &amp; Designer</h2>
+                <p>i build/create/craft pixel-perfect, engaging/unique, accessible, and user-centric/human-centered digital experiences.</p>
+                <ul class="flex justify-evenly w-full py-4">
+                    <li class="hidden"><a href="#contact">contact me</a></li>
+                    <li><a href="email">&#9993;</a></li>
+                    <li><a href="linkedin">&#128101;</a></li>
+                    <li><a href="github">&#128049;</a></li>
+                </ul>
+                <a href="#projects" class="block mx-auto w-max p-4">v</a>
             </header>
-            <section id="projects">
+            <section id="projects" class="mb-28">
                 <h2>Projects</h2>
             </section>
-            <section id="about">
+            <section id="about" class="mb-28">
                 <h2>About</h2>
+                <p>
+                    Hello! how i got into coding
+                </p>
+                <p>
+                    what im up to nowadays
+                </p>
+                <p>
+                    and my hobbies
+                </p>
+                <div class="placeholder h-48"></div>
             </section>
-            <section id="contact">
+            <section id="contact" class="mb-18">
                 <h2>Contact me!</h2>
+                <p>If you're also passionate about web development and design, don't hesitate to connect with me and chat!</p>
+                <button class="bg-neutral-300 p-4">copy email</button>
             </section>
         </main>
         <am-footer></am-footer> 
